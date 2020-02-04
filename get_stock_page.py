@@ -5,7 +5,7 @@ import chromedriver_binary
 
 driver = webdriver.Chrome()
 
-stock_number = [7203]
+stock_number = [銘柄]
 
 def download_stock_csv(code_range,year_range):
     for code in code_range:
@@ -28,4 +28,4 @@ def download_stock_csv(code_range,year_range):
         pass
     time.sleep(3)
 
-download_stock_csv(stock_number,range(1998,2019))
+download_stock_csv(stock_number,range(西暦始め,西暦終わり))
