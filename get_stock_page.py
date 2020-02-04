@@ -15,7 +15,7 @@ def download_stock_csv(code_range,year_range):
                 driver.get(url)
 
                 try:
-                    driver.find_element_by_name("csv").clickq()
+                    driver.find_element_by_name("csv").click()
                     time.sleep(3)
                     driver.find_element_by_name("csv").click()
                 except NoSuchElementException:
